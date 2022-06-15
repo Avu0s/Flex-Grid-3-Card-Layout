@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Nunito+Sans:wght@200;300;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Nunito+Sans:wght@200;300;600;700&display=swap");
+:root {
+  --blackish: #222;
+  --fadedWhite: hsla(0, 0%, 100%, 0.75);
+  --offWhite: hsl(0, 0%, 95%);
+  --green: hsl(179, 100%, 13%);
+  --teal: hsl(184, 100%, 22%);
+  --orange: hsl(31, 77%, 52%);
+  --boxShadow: 0 1px 6px 0 rgba(161, 162, 165, 0.28);
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+body{
+    background-color: var(--offWhite);
+}
+a{
+    text-decoration: none;
+    color: var(--offWhite);
+    padding: 0.75rem 1.25rem;
+    border-radius: 1.5rem;
+    background-color: var(--green);
+    border: solid 0.15rem var(--green);
+}
+header {
+  height: 12vh;
+}
+header > h1 {
+  color: var(--green);
+  text-align: center;
+  margin: auto;
+}
+.cards{
+    box-shadow: var(--boxShadow);
+}
+.card {
+  padding: 2.5rem;
+}
+.card > h1 {
+  font-family: "Big Shoulders Display";
+  color: var(--offWhite);
+  margin-top: 2rem;
+}
+.card > p {
+  margin-top: 1.5rem;
+  line-height: 1.75rem;
+  color: var(--fadedWhite);
+}
+button {
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+  border: solid 0.15rem var(--offWhite);
+  color: var(--offWhite);
+  border-radius: 1.5rem;
+  margin-top: 4.5rem;
+}
+.orange {
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: var(--orange);
+}
+.teal {
+  background-color: var(--teal);
+}
+.green {
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-color: var(--green);
+}
+.orange > button {
+  background-color: var(--orange);
+}
+.teal > button {
+  background-color: var(--teal);
+}
+.green > button {
+  background-color: var(--green);
+}
+.orange > button:hover {
+  background-color: var(--offWhite);
+  color: var(--orange);
+}
+.teal > button:hover {
+  background-color: var(--offWhite);
+  color: var(--teal);
+}
+a:hover,
+.green > button:hover {
+  background-color: var(--offWhite);
+  color: var(--green);
+}
+footer {
+  height: 16vh;
+  text-align: center;
+}
+.btn{
+    margin: auto;
+    padding-top: .75rem;
+}
+@media (min-width: 375px) {
+    body{
+        height: 100vh;
+        overflow: hidden;
+    }
+  .card {
+    min-width: 13.5rem;
+    padding: 2.35rem;
+  }
+  .card > p {
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .orange {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .green {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
